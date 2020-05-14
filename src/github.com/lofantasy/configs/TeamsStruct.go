@@ -14,6 +14,22 @@ type MatchStats struct {
 	EnemySpecA         string
 	EnemyClassB        string
 	EnemySpecB         string
+	Heal               HealerStats
+	Dps                DpsStats
+}
+
+// HealerStats - for Healer Comps.
+type HealerStats struct {
+	HealComp bool
+	Win      bool
+	Loss     bool
+}
+
+// DpsStats - for Healer Comps.
+type DpsStats struct {
+	DpsComp bool
+	Win     bool
+	Loss    bool
 }
 
 // TeamComp for Enemey team stats.
